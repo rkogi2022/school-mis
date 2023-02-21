@@ -1,0 +1,115 @@
+{% extends 'school/base.html'%}
+
+{% block content %}
+
+<div>
+    <div>
+        <!-- empty div -->
+        <br><br>
+    </div>
+</div>
+<div class="timetable">
+    <br><br>
+    <h4>SEP-DEC TIME TABLE</h4>
+    <br><table border="5" cellspacing="0" align="center" class="ttl">
+        <!--Timetable-->
+        <tr>
+            <td><br>
+                <b>Day/Period</b></br>
+            </td>
+            <td >
+                <b>I<br>9:30-10:20</b>
+            </td>
+            <td>
+                <b>II<br>10:20-11:10</b>
+            </td>
+            <td>
+                <b>III<br>11:10-12:00</b>
+            </td>
+            <td>
+                <b>12:00-12:40</b>
+            </td>
+            <td>
+                <b>IV<br>12:40-1:30</b>
+            </td>
+            <td>
+                <b>V<br>1:30-2:20</b>
+            </td>
+            <td>
+                <b>VI<br>2:20-3:10</b>
+            </td>
+            <td>
+                <b>VII<br>3:10-4:00</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Monday</b></td>
+            <td>Eng</td>
+            <td>Mat</td>
+            <td>Che</td>
+            <td rowspan="6">
+                <h2>L<br>U<br>N<br>C<br>H</h2>
+            </td>
+            <td colspan="3">MUSIC</td>
+            <td>Phy</td>
+        </tr>
+        <tr>
+            <td>
+                <b>Tuesday</b>
+            </td>
+            <td colspan="3">LAB
+            </td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td>Mat</td>
+            <td>SPORTS</td>
+        </tr>
+        <tr>
+            <td>
+                <b>Wednesday</b>
+            </td>
+            <td>Kisw</td>
+            <td>Phy</td>
+            <td>Agric</td>
+            <td>Bio</td>
+            <td colspan="3">LIBRARY
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Thursday</b>
+            </td>
+            <td>Phy</td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td colspan="3">LAB
+            </td>
+            <td>Mat</td>
+        </tr>
+        <tr>
+            <td>
+                <b>Friday</b>
+            </td>
+            <td colspan="3">LAB
+            </td>
+            <td>Mat</td>
+            <td>Che</td>
+            <td>Kisw</td>
+            <td>Phy</td>
+        </tr>
+        <tr>
+            <td>
+                <b>Saturday</b>
+            </td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td>Phy</td>
+            <td colspan="3">MUSIC
+            </td>
+            <td align="center" height="50">SPORTS</td>
+        </tr>
+    </table>
+</div>
+
+{% endblock %}

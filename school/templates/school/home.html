@@ -1,0 +1,98 @@
+{% extends 'school/base.html'%}
+
+{%block content%}
+
+<div class="container">
+    <br></br>
+    <div class="row">
+        <div class="col-md-9">
+            <h5><bold><center>NOTICES</center></bold></h5>
+
+            <div class="card school-card">
+                <div class="card-body">
+                    <table class="table table-sm">
+                        <tr>
+                            <th>Notice</th>
+                            <th>Date</th>
+                        </tr>
+                        {% for n in notice %}
+                        <tr>
+                            <td>{{n.message}} </td>
+                            <td>{{n.date_created}} </td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-md-9">
+            <h5><bold><center>ATTENDANCE</center></bold></h5>
+
+            <div class="card school-card">
+                <div class="card-body">
+                    <table class="table table-sm">
+                        <tr>
+                            <th>Students Id</th>
+                            <th>Students Name</th>
+                            <th>Attended Lectures</th>
+                            <th>Total Lectures</th>
+                        </tr>
+                        {% for a in attendance %}
+                        <tr>
+                            <td>{{a.studentid}} </td>
+                            <td>{{a.studentname}} </td>
+                            <td>{{a.lecturesattended}} </td>
+                            <td>{{a.totallectures}} </td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <br></br>
+
+    <div class="row">
+        <div class="col-md-9">
+            <h5><bold><center>GRADES</center></bold></h5>
+            <div class="card school-card">
+                <div class="card-body">
+                    <table class="table table-sm">
+                        <tr>
+                            <th>Student Id</th>
+                            <th>Student Name</th>
+                            <th>Physics</th>
+                            <th>Mathematics</th>
+                            <th>English</th>
+                            <th>Kiswahili</th>
+                            <th>Chemistry</th>
+                            <th>Biology</th>
+                            <th>Agriculture</th>
+                        </tr>
+                        {% for m in marks %}
+                        <tr>
+                            <td>{{m.studentid}} </td>
+                            <td>{{m.studentname}} </td>
+                            <td>{{m.physics}} </td>
+                            <td>{{m.mathematics}} </td>
+                            <td>{{m.english}} </td>
+                            <td>{{m.kiswahili}} </td>
+                            <td>{{m.chemistry}} </td>
+                            <td>{{m.biology}} </td>
+                            <td>{{m.agriculture}} </td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+                <br><br>
+                <p><b>Note:</b>Marks are out of 100</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
